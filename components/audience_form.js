@@ -14,6 +14,7 @@ export default function AudienceForm() {
     let [emailError, setEmailError] = useState("");
     let [phoneError, setPhoneError] = useState("");
     let [formError, setFormError] = useState("");
+    let [selectedRole, setRole] = useState("");
     const onDialogButtonClcked = () => {
         setDialogState(false);
     };
@@ -52,6 +53,7 @@ export default function AudienceForm() {
         setFormIsSubmitting(true);
         setFormError("");
         const user_role = e.target.category.value;
+        setRole(user_role);
         const username = e.target.fullname.value;
         const email = e.target.email.value;
         const phone = e.target.phone_number.value;
@@ -172,7 +174,7 @@ export default function AudienceForm() {
 
     return (
         <div id='formSection' className={styles.formSection}>
-            <Dialog onDoneButtonClick={onDialogButtonClcked} isOpen={dialogIsOpen} title="Form submitted successfully" message="Thank you for taking time to show interest to become one of our investors, our consultant would contact you shortly" />
+            <Dialog onDoneButtonClick={onDialogButtonClcked} isOpen={dialogIsOpen} title="Form submitted successfully" message={"Thank you for taking time to show interest to become one of our " + selectedRole + ", our consultant would contact you shortly"} />
             <h2 className={styles.formTitle}>Rhino Homes & Properties </h2>
             <img className={styles.formTitleSeperator} src='images/separator-icon.svg' />
             <p className={styles.formDescription}>Join our unboarding waiting list to become one of our verified agent, subcriber or investor</p>
