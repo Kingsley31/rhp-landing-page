@@ -1,0 +1,175 @@
+.footerSection {
+    background-color: var(--ash-section-bg-color);
+}
+
+.footerContainer {
+    padding: 1em 1em 0em 1em;
+}
+
+.strategyContainer {
+    color: #000000b2;
+    font-size: .8em;
+    line-height: 1.5;
+}
+
+.ratingBar {
+    display: none;
+}
+
+.trustedSection {
+    display: none;
+}
+
+.contactContainer h2 {
+    font-size: .9em;
+    margin: 0px;
+    color: var(--title-main-color);
+    text-decoration: underline;
+}
+
+.contactContainer h4 {
+    font-size: .7em;
+    margin: .8em 0px;
+    color: #000000e1;
+}
+
+.contactContainer p {
+    font-size: .7em;
+    margin: .8em 0px;
+    color: #000000b2;
+}
+
+.quickContainer h2 {
+    font-size: .9em;
+    margin: .8em 0px;
+    color: var(--title-main-color);
+}
+
+.quickContainer a {
+    display: block;
+    font-size: .7em;
+    margin: .8em 0px;
+    color: #000000b2;
+}
+
+.copyRightSection {
+    font-size: .7em;
+    margin: 0px;
+    text-align: center;
+    color: #000000b2;
+    padding: .8em;
+    border: .3em solid transparent;
+    border-top-color: #00000015;
+}
+
+
+@media (min-width:600px) {
+    .footerContainer {
+        padding: 2em 2em 0em 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1em;
+    }
+
+    .strategyContainer {
+        flex: 0 0 30em;
+        font-size: .5em;
+        line-height: 1.5em;
+    }
+
+    .ratingBar {
+        display: block;
+    }
+
+    .trustedSection {
+        display: block;
+    }
+
+    .contactContainer h2 {
+        font-size: .7em;
+        margin: 0px 0px;
+    }
+
+    .contactContainer h4 {
+        font-size: .6em;
+        margin: .6em 0px;
+    }
+
+    .contactContainer p {
+        font-size: .4em;
+        margin: .3em 0px;
+    }
+
+    .quickContainer h2 {
+        font-size: .7em;
+        margin: 0px 0px;
+    }
+
+    .quickContainer a {
+        margin: .6em 0px;
+    }
+
+    .copyRightSection {
+        color: #ffffff;
+        background-color: #000000;
+
+    }
+}
+
+
+
+@media (min-width:700px) {
+    .footerContainer {
+        padding: 3em 2em .5em 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1em;
+    }
+
+    .strategyContainer {
+        flex: 0 0 30em;
+        font-size: .8em;
+        line-height: 1.5em;
+    }
+
+    .ratingBar {
+        display: block;
+    }
+
+    .trustedSection {
+        display: block;
+    }
+
+    .contactContainer h2 {
+        font-size: .7em;
+        margin: 0px 0px;
+    }
+
+    .contactContainer h4 {
+        font-size: .7em;
+        margin: 1em 0px;
+    }
+
+    .contactContainer p {
+        font-size: .7em;
+        margin: .8em 0px;
+    }
+
+    .quickContainer h2 {
+        font-size: .7em;
+        margin: 0px 0px;
+    }
+
+    .quickContainer a {
+        font-size: .7em;
+        margin: .9em 0px;
+    }
+
+    .copyRightSection {
+        color: #ffffff;
+        background-color: #000000;
+
+    }
+}

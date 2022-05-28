@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+:root {
+  --body-background-color: rgb(192, 28, 69);
+  --navbar-background-color: #ffffff;
+  --nav-drawer-background-color: #140c0cf4;
+  --nav-drawer-text-color: #fff;
+  --form-input-placeholder-color: #18273a9a;
+  --form-select-dropdownbacground: #ECF1EF;
+  --title-main-color: #000000;
+  --title-sub-color: #ED1C24;
+  --text-color: #4A5768;
+  --white-section-bg-color: #FFFFFF;
+  --ash-section-bg-color: #F2F2F2;
+  --submit-btn-bg: #ED1C24;
+  --txt-error-color: #ED1C24;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--body-background-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.select-items div,
+.select-selected {
+  cursor: pointer;
+  height: 100%;
+}
+
+.select-items div {
+  border: 0.001em solid;
+  border-bottom-color: #0000006f;
+  padding-top: 0.7em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+}
+
+.select-selected {
+  padding-top: 0.9em;
+  padding-bottom: 0.2em;
+  padding-left: 0.5em;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 1.3em;
+  right: 1em;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: var(--form-input-placeholder-color) transparent transparent transparent;
+}
+
+.select-items {
+  position: absolute;
+  background-color: var(--form-select-dropdownbacground);
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent var(--form-input-placeholder-color) transparent;
+  top: 7px;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.select-item {
+  position: relative;
+}
+
+.select-item:after,
+.select-item:after {
+  position: absolute;
+  content: "";
+  width: 1.5em;
+  height: 1.3em;
+  background-image: url("../public/images/arrow-icon.svg");
+  top: .5em;
+  right: 45%;
+}
