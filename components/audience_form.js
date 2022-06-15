@@ -177,7 +177,7 @@ export default function AudienceForm() {
             <Dialog onDoneButtonClick={onDialogButtonClcked} isOpen={dialogIsOpen} title="Form submitted successfully" message={"Thank you for taking time to show interest to become one of our " + selectedRole + ", our consultant would contact you shortly"} />
             <h2 className={styles.formTitle}>Rhino Homes & Properties </h2>
             <img className={styles.formTitleSeperator} src='images/separator-icon.svg' />
-            <p className={styles.formDescription}>Join our unboarding waiting list to become one of our verified agent, subcriber or investor</p>
+            <p className={styles.formDescription}>Join our unboarding waiting list to become one of our verified agent, buyer or investor</p>
             <form onSubmit={submitForm} className={styles.form}>
                 {formError ? <p className={styles.errorMessage}>{formError}</p> : null}
                 <label className={styles.inputLabel} htmlFor="category">Choose category</label>
@@ -188,10 +188,10 @@ export default function AudienceForm() {
                     <div className={styles.formSelect}>
                         <div id='customSelect' className={styles.customSelect}>
                             <select name='category' required placeholder='e.g agent or subscriber'>
-                                <option value="none">e.g agent or subscriber</option>
+                                <option value="none">e.g agent or buyer</option>
                                 <option value="agent">Agent</option>
                                 <option value="investor">Investor</option>
-                                <option value="subscriber">Subscriber</option>
+                                <option value="buyer">Buyer</option>
                             </select>
                         </div>
                     </div>

@@ -38,6 +38,8 @@
     border-width: 2.5px;
     border-style: solid;
     border-color: #18273a17;
+    clip-path: polygon(0 1%, 100% 1%, 100% 1%, 0 1%);
+    animation: slidedown 2s ease-in .2s 1 normal forwards;
 }
 
 .whyUseUsPoint h4,
@@ -317,5 +319,19 @@
 
     .whyUseUsPoint p {
         font-size: .8em;
+    }
+}
+
+@keyframes slidedown {
+    0% {
+        clip-path: polygon(0 1%, 100% 1%, 100% 1%, 0 1%);
+    }
+
+    50% {
+        clip-path: polygon(0 1%, 100% 1%, 99% 44%, 0 60%);
+    }
+
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }

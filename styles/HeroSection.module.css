@@ -7,6 +7,12 @@
     height: 37.5em;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #0c0c0c41;
+}
+
 @media (max-width: 405px) {
     .heroSection {
         background-size: cover;

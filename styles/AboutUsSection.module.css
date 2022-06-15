@@ -30,6 +30,8 @@
     line-height: 1.5em;
     margin: 1em auto;
     width: 97%;
+    clip-path: polygon(0 1%, 100% 1%, 100% 1%, 0 1%);
+    animation: slidedown 2s ease-in .2s 1 normal forwards;
 }
 
 .rhpEntitiesContainer {
@@ -45,7 +47,10 @@
     border-width: 1px;
     border-style: solid;
     padding: .7em;
-
+    flex-grow: 1;
+    width: 50%;
+    clip-path: polygon(0 1%, 100% 1%, 100% 1%, 0 1%);
+    animation: slidedown 2s ease-in .2s 1 normal forwards;
 }
 
 .rhpEntity img {
@@ -295,5 +300,20 @@
 
     .rhpEntity a {
         font-size: 1em;
+    }
+}
+
+
+@keyframes slidedown {
+    0% {
+        clip-path: polygon(0 1%, 100% 1%, 100% 1%, 0 1%);
+    }
+
+    50% {
+        clip-path: polygon(0 1%, 100% 1%, 99% 44%, 0 60%);
+    }
+
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }

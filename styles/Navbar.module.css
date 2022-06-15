@@ -14,13 +14,14 @@
 }
 
 .navbarLogo {
-    width: 4em;
+    width: 6em;
+    height: 4em;
 }
 
 .navbarLogoLink {
     color: #fff;
     text-decoration: none;
-    height: 37px;
+    /* height: 37px; */
     margin-left: 1em;
 }
 
@@ -103,15 +104,22 @@
 
 @media (min-width: 600px) {
 
-    /* .navDrawer {
-        width: 80%;
-    } */
+    .navbar {
+        padding: 1em .3em;
+        gap: 1em;
+    }
+
+
+    .navbarLogoLink {
+        margin-left: 0em;
+    }
+
     .navDrawer {
         transform: translateX(0%);
-        font-size: .7em;
+        font-size: .8em;
         color: #18273A;
         background-color: var(--navbar-background-color);
-        width: 75%;
+        width: 85%;
         -webkit-transition: unset;
         -moz-transition: unset;
         -o-transition: unset;
@@ -143,50 +151,65 @@
         display: none;
     }
 
-    .navbarLogoLink {
-        margin-left: .6em;
-    }
-
 }
 
 
 
 @media (min-width: 660px) {
     .navDrawer {
-        /* font-size: .6em; */
-        width: 68%;
+        width: 75%;
+        margin-right: .5em;
     }
 
     .navbarLogoLink {
-        margin-left: 2em;
+        margin-left: 1em;
     }
 }
 
-@media (min-width: 710px) {
+@media (min-width: 750px) {
     .navDrawer {
-        /* font-size: .6em; */
-        width: 65%;
+        width: 70%;
     }
 }
 
 @media (min-width: 800px) {
     .navDrawer {
         /* font-size: .6em; */
+        width: 70%;
+        margin-right: 1em;
+    }
+
+    .navbarLogoLink {
+        margin-left: 1.5em;
+    }
+}
+
+@media (min-width: 860px) {
+    .navDrawer {
+        /* font-size: .6em; */
         width: 60%;
+        margin-right: 1em;
+    }
+
+    .navbarLogoLink {
+        margin-left: 1.5em;
     }
 }
 
 @media (min-width: 900px) {
     .navDrawer {
-        /* font-size: .6em; */
         width: 55%;
     }
 }
 
 @media (min-width: 1000px) {
     .navDrawer {
-        /* font-size: .6em; */
-        width: 47%;
+        width: 50%;
+        margin-right: 2em;
+    }
+
+    .navbarLogoLink {
+        margin-left: 2.5em;
     }
 }
 

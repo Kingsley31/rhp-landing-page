@@ -11,6 +11,8 @@
     margin-left: 2em;
     margin-right: 3.5em;
     justify-content: space-between;
+    clip-path: polygon(0 1%, 100% 1%, 100% 1%, 0 1%);
+    animation: slidedown 2s ease-in .2s 1 normal forwards;
 }
 
 .contactDetailContainer {
@@ -275,5 +277,20 @@
         margin-left: 4em;
         margin-right: 8em;
         max-width: 1000px;
+    }
+}
+
+
+@keyframes slidedown {
+    0% {
+        clip-path: polygon(0 1%, 100% 1%, 100% 1%, 0 1%);
+    }
+
+    50% {
+        clip-path: polygon(0 1%, 100% 1%, 99% 44%, 0 60%);
+    }
+
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }

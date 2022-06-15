@@ -9,7 +9,8 @@
     font-size: 1em;
     font-weight: normal;
     border: 0.1em solid transparent;
-    border-color: transparent #421cedbd #421cedbd #421cedbd;
+    animation: glow 3s ease-in .2s infinite normal forwards;
+    border-color: transparent transparent transparent transparent;
     cursor: pointer;
 }
 
@@ -47,5 +48,15 @@
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes glow {
+    0% {
+        border-color: transparent transparent transparent transparent;
+    }
+
+    100% {
+        border-color: #421cedbd #421cedbd #421cedbd #421cedbd;
     }
 }

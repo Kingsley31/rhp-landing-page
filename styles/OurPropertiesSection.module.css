@@ -2,6 +2,8 @@
     background-color: var(--white-section-bg-color);
     padding: 3em 0px 1em 0px;
     display: none;
+    clip-path: polygon(0 1%, 100% 1%, 100% 1%, 0 1%);
+    animation: slidedown 2s ease-in .2s 1 normal forwards;
 }
 
 .sectionTitle {
@@ -306,5 +308,20 @@
     .categoryTitleContainer {
         margin: 2em 9em 0px 9em;
         /* background-color: blue; */
+    }
+}
+
+
+@keyframes slidedown {
+    0% {
+        clip-path: polygon(0 1%, 100% 1%, 100% 1%, 0 1%);
+    }
+
+    50% {
+        clip-path: polygon(0 1%, 100% 1%, 99% 44%, 0 60%);
+    }
+
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }

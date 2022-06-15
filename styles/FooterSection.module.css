@@ -4,6 +4,8 @@
 
 .footerContainer {
     padding: 1em 1em 0em 1em;
+    clip-path: polygon(0 1%, 100% 1%, 100% 1%, 0 1%);
+    animation: slidedown 2s ease-in .2s 1 normal forwards;
 }
 
 .strategyContainer {
@@ -282,5 +284,20 @@
         color: #ffffff;
         background-color: #000000;
 
+    }
+}
+
+
+@keyframes slidedown {
+    0% {
+        clip-path: polygon(0 1%, 100% 1%, 100% 1%, 0 1%);
+    }
+
+    50% {
+        clip-path: polygon(0 1%, 100% 1%, 99% 44%, 0 60%);
+    }
+
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }

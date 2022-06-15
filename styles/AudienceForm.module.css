@@ -2,13 +2,9 @@
     padding: 2em;
     background-color: #00000098;
     color: #ffffff;
-    /* margin-left: 0em;
-    visibility: hidden; */
     height: 100%;
-    -webkit-transition: all .5s ease-in;
-    -moz-transition: all .5s ease-in;
-    -o-transition: all .5s ease-in;
-    transition: all .5s ease-in;
+    clip-path: polygon(0 0, 2% 0, 2% 100%, 0 100%);
+    animation: slidedown 2s ease-in .2s 1 normal forwards;
 }
 
 
@@ -170,5 +166,19 @@
         width: 30%;
         margin-left: 62%;
         padding: 2.3em 1em;
+    }
+}
+
+@keyframes slidedown {
+    0% {
+        clip-path: polygon(0 0, 2% 0, 2% 100%, 0 100%);
+    }
+
+    50% {
+        clip-path: polygon(0 0, 57% 0, 40% 99%, 0 100%);
+    }
+
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }

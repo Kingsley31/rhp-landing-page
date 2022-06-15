@@ -13,6 +13,11 @@
     position: relative;
 }
 
+.howItWorksMainContainer {
+    clip-path: polygon(0 1%, 100% 1%, 100% 1%, 0 1%);
+    animation: slidedown 2s ease-in .2s 1 normal forwards;
+}
+
 .howItWorksMainContainer h2 {
     color: var(--title-main-color);
     text-align: center;
@@ -518,5 +523,19 @@
         justify-content: center;
         gap: 4em;
         /* height: 18em; */
+    }
+}
+
+@keyframes slidedown {
+    0% {
+        clip-path: polygon(0 1%, 100% 1%, 100% 1%, 0 1%);
+    }
+
+    50% {
+        clip-path: polygon(0 1%, 100% 1%, 99% 44%, 0 60%);
+    }
+
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }
