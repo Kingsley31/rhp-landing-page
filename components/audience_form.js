@@ -7,7 +7,7 @@ import appConfig from '../appconfig/config';
 
 export default function AudienceForm() {
 
-    let [dialogIsOpen, setDialogState] = useState(false);
+    let [dialogIsOpen, setDialogState] = useState(true);
     let [formIsSubmitting, setFormIsSubmitting] = useState(false);
     let [categoryError, setCategoryError] = useState("");
     let [nameError, setNameError] = useState("");
@@ -173,56 +173,59 @@ export default function AudienceForm() {
 
 
     return (
-        <div id='formSection' className={styles.formSection}>
+        <>
             <Dialog onDoneButtonClick={onDialogButtonClcked} isOpen={dialogIsOpen} title="Form submitted successfully" message={"Thank you for taking time to show interest to become one of our " + selectedRole + ", our consultant would contact you shortly"} />
-            <h2 className={styles.formTitle}>Rhino Homes & Properties </h2>
-            <img className={styles.formTitleSeperator} src='images/separator-icon.svg' />
-            <p className={styles.formDescription}>Join our unboarding waiting list to become one of our verified agent, buyer or investor</p>
-            <form onSubmit={submitForm} className={styles.form}>
-                {formError ? <p className={styles.errorMessage}>{formError}</p> : null}
-                <label className={styles.inputLabel} htmlFor="category">Choose category</label>
-                <div id='categoryInput' className={styles.formInput}>
-                    <i className={styles.inputIcon}>
-                        <img src='images/category-icon.svg' />
-                    </i>
-                    <div className={styles.formSelect}>
-                        <div id='customSelect' className={styles.customSelect}>
-                            <select name='category' required placeholder='e.g agent or subscriber'>
-                                <option value="none">e.g agent or buyer</option>
-                                <option value="agent">Agent</option>
-                                <option value="investor">Investor</option>
-                                <option value="buyer">Buyer</option>
-                            </select>
+            <div id='formSection' className={styles.formSection}>
+                <h2 className={styles.formTitle}>Rhino Homes & Properties </h2>
+                <img className={styles.formTitleSeperator} src='images/separator-icon.svg' />
+                <p className={styles.formDescription}>Join our unboarding waiting list to become one of our verified agent, buyer or investor</p>
+                <form onSubmit={submitForm} className={styles.form}>
+                    {formError ? <p className={styles.errorMessage}>{formError}</p> : null}
+                    <label className={styles.inputLabel} htmlFor="category">Choose category</label>
+                    <div id='categoryInput' className={styles.formInput}>
+                        <i className={styles.inputIcon}>
+                            <img src='images/category-icon.svg' />
+                        </i>
+                        <div className={styles.formSelect}>
+                            <div id='customSelect' className={styles.customSelect}>
+                                <select name='category' required placeholder='e.g agent or subscriber'>
+                                    <option value="none">e.g agent or buyer</option>
+                                    <option value="agent">Agent</option>
+                                    <option value="investor">Investor</option>
+                                    <option value="buyer">Buyer</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                </div>
-                {categoryError ? <p className={styles.errorMessage}>{categoryError}</p> : null}
-                <label className={styles.inputLabel} htmlFor="fullname">Fullname</label>
-                <div className={styles.formInput}>
-                    <i className={styles.inputIcon}>
-                        <img src='images/name-icon.svg' />
-                    </i>
-                    <input type="text" name="fullname" placeholder="e.g  firstname & lastname" required />
-                </div>
-                {nameError ? <p className={styles.errorMessage}>{nameError}</p> : null}
-                <label className={styles.inputLabel} htmlFor="email">Email Address</label>
-                <div className={styles.formInput}>
-                    <i className={styles.inputIcon}>
-                        <img src='images/input-email-icon.svg' />
-                    </i>
-                    <input type="email" name="email" placeholder="e.g abc@xyz.com" required />
-                </div>
-                {emailError ? <p className={styles.errorMessage}>{emailError}</p> : null}
-                <label className={styles.inputLabel} htmlFor="phone_number">Phone Number</label>
-                <div className={styles.formInput}>
-                    <i className={styles.inputIcon}>
-                        <img src='images/input-call-icon.svg' />
-                    </i>
-                    <input type="phone" name="phone_number" placeholder="e.g  +234  ******" required />
-                </div>
-                {phoneError ? <p className={styles.errorMessage}>{phoneError}</p> : null}
-                <AnimatedButton title='Submit' isLoading={formIsSubmitting} />
-            </form>
-        </div>
+                    {categoryError ? <p className={styles.errorMessage}>{categoryError}</p> : null}
+                    <label className={styles.inputLabel} htmlFor="fullname">Fullname</label>
+                    <div className={styles.formInput}>
+                        <i className={styles.inputIcon}>
+                            <img src='images/name-icon.svg' />
+                        </i>
+                        <input type="text" name="fullname" placeholder="e.g  firstname & lastname" required />
+                    </div>
+                    {nameError ? <p className={styles.errorMessage}>{nameError}</p> : null}
+                    <label className={styles.inputLabel} htmlFor="email">Email Address</label>
+                    <div className={styles.formInput}>
+                        <i className={styles.inputIcon}>
+                            <img src='images/input-email-icon.svg' />
+                        </i>
+                        <input type="email" name="email" placeholder="e.g abc@xyz.com" required />
+                    </div>
+                    {emailError ? <p className={styles.errorMessage}>{emailError}</p> : null}
+                    <label className={styles.inputLabel} htmlFor="phone_number">Phone Number</label>
+                    <div className={styles.formInput}>
+                        <i className={styles.inputIcon}>
+                            <img src='images/input-call-icon.svg' />
+                        </i>
+                        <input type="phone" name="phone_number" placeholder="e.g  +234  ******" required />
+                    </div>
+                    {phoneError ? <p className={styles.errorMessage}>{phoneError}</p> : null}
+                    <AnimatedButton title='Submit' isLoading={formIsSubmitting} />
+                </form>
+            </div>
+        </>
+
     )
 }
