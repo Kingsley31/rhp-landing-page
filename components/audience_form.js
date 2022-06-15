@@ -7,7 +7,7 @@ import appConfig from '../appconfig/config';
 
 export default function AudienceForm() {
 
-    let [dialogIsOpen, setDialogState] = useState(true);
+    let [dialogIsOpen, setDialogState] = useState(false);
     let [formIsSubmitting, setFormIsSubmitting] = useState(false);
     let [categoryError, setCategoryError] = useState("");
     let [nameError, setNameError] = useState("");
