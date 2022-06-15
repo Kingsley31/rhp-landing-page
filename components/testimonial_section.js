@@ -10,32 +10,32 @@ export default function TestimonialSection() {
                         <div className={styles.sliderItem}>
                             <div className={styles.userIdentityAndRatingContainer}>
                                 <div className={styles.testifier}>
-                                    <h4>Lionel Messi</h4>
-                                    <p className={styles.testifierRole}>Reliance HMO</p>
+                                    <h4>Divine Olajide</h4>
+                                    <p className={styles.testifierRole}>RHP Customer</p>
                                 </div>
                                 <img src="images/ratingbar-icon.svg" alt="five star" />
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at molestie erat, at fermentum felis. Donec facilisis.</p>
+                            <p>Thank you to Rhino homes and properties Ltd for helping me get a nice property, i never knew to get an amazing property like this would be this easy.</p>
                         </div>
                         <div className={styles.sliderItem}>
                             <div className={styles.userIdentityAndRatingContainer}>
                                 <div className={styles.testifier}>
-                                    <h4>Lionel Messi</h4>
-                                    <p className={styles.testifierRole}>Reliance HMO</p>
+                                    <h4>Williams Roma</h4>
+                                    <p className={styles.testifierRole}>RHP Agent</p>
                                 </div>
                                 <img src="images/ratingbar-icon.svg" alt="five star" />
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at molestie erat, at fermentum felis. Donec facilisis.</p>
+                            <p>Rhino homes & Properties is the best, my commission was paid instanty to my wallet, exactly the estimated commsion. Thank you </p>
                         </div>
                         <div className={styles.sliderItem}>
                             <div className={styles.userIdentityAndRatingContainer}>
                                 <div className={styles.testifier}>
-                                    <h4>Lionel Messi</h4>
-                                    <p className={styles.testifierRole}>Reliance HMO</p>
+                                    <h4>Kola Philip</h4>
+                                    <p className={styles.testifierRole}>RHP Investor</p>
                                 </div>
                                 <img src="images/ratingbar-icon.svg" alt="five star" />
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at molestie erat, at fermentum felis. Donec facilisis.</p>
+                            <p>Rhino homes & Properties investment plan has been the best decision i took this year. They have a swift investment plan and their properties are developing rapidly.</p>
                         </div>
                     </div>
                 </div>

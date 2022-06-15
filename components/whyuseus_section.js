@@ -21,7 +21,7 @@ export default function WhyUseUsSection() {
                         <div className={styles.whyUseUsPoint}>
                             <img src="images/seamlesstech-icon.svg" />
                             <h4>Seamless Technology</h4>
-                            <p>Connect with a large Network of suppliers</p>
+                            <p>Connect with vetted agents with ease</p>
                         </div>
                         <div className={styles.whyUseUsPoint}>
                             <img src="images/buyinbulk-icon.svg" />

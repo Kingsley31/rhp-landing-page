@@ -75,8 +75,8 @@ export default function ContactUsSection() {
                     <div className={styles.contactDetailContainer}>
                         <h4>Our Agent</h4>
                         <img src="images/agent-image.svg" alt="RHP Agent Image" />
-                        <p>Contact</p>
-                        <p>Phone: <span>+234-9020159536</span></p>
+                        <p>Contact Information</p>
+                        <p>Phone: <span>+234 806 475 9596</span></p>
                         <p>Email: <span>info@rhp.ng</span></p>
                     </div>
                     <div className={styles.contactFormSection}>
@@ -96,7 +96,7 @@ export default function ContactUsSection() {
                                     {emailError ? <p className={styles.errorMessage}>{emailError}</p> : null}
                                 </div>
                             </div>
-                            <label htmlFor="message">Your message</label>
+                            <label htmlFor="message">Your Message</label>
                             <textarea className={styles.formMessageBox + " " + styles.input} name="message" placeholder="Your message" required></textarea>
                             {messageError ? <p className={styles.errorMessage}>{messageError}</p> : null}
                             <AnimatedButton title='Send a Message' isLoading={formIsSubmitting} buttonStyle={{ marginTop: "1.5em", padding: "0.6em", fontSize: ".8em", fontWeight: "normal" }} />

@@ -170,6 +170,117 @@
     .copyRightSection {
         color: #ffffff;
         background-color: #000000;
+        font-size: .8em;
+    }
+}
+
+@media (min-width:900px) {
+    .footerContainer {
+        padding: 3em 2em .5em 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1em;
+    }
+
+    .strategyContainer {
+        flex: 0 0 30em;
+        font-size: .9em;
+        line-height: 1.5em;
+    }
+
+    .ratingBar {
+        display: block;
+    }
+
+    .trustedSection {
+        display: block;
+    }
+
+    .contactContainer h2 {
+        font-size: .8em;
+        margin: 0px 0px;
+    }
+
+    .contactContainer h4 {
+        font-size: .8em;
+        margin: 1em 0px;
+    }
+
+    .contactContainer p {
+        font-size: .8em;
+        margin: .8em 0px;
+    }
+
+    .quickContainer h2 {
+        font-size: .8em;
+        margin: 0px 0px;
+    }
+
+    .quickContainer a {
+        font-size: .8em;
+        margin: .9em 0px;
+    }
+
+    .copyRightSection {
+        color: #ffffff;
+        background-color: #000000;
+
+    }
+}
+
+
+@media (min-width:1100px) {
+    .footerContainer {
+        padding: 3em 2em .5em 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1em;
+    }
+
+    .strategyContainer {
+        flex: 0 0 30em;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .ratingBar {
+        display: block;
+    }
+
+    .trustedSection {
+        display: block;
+    }
+
+    .contactContainer h2 {
+        font-size: .9em;
+        margin: 0px 0px;
+    }
+
+    .contactContainer h4 {
+        font-size: .9em;
+        margin: 1em 0px;
+    }
+
+    .contactContainer p {
+        font-size: .9em;
+        margin: .8em 0px;
+    }
+
+    .quickContainer h2 {
+        font-size: .9em;
+        margin: 0px 0px;
+    }
+
+    .quickContainer a {
+        font-size: .9em;
+        margin: .9em 0px;
+    }
+
+    .copyRightSection {
+        color: #ffffff;
+        background-color: #000000;
 
     }
 }

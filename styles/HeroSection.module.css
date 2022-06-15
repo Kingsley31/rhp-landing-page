@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    height: 599px;
+    height: 37.5em;
 }
 
 @media (max-width: 405px) {
@@ -12,20 +12,20 @@
         background-size: cover;
         background-position: 0%;
         background-image: url("../public/images/hero-section-bg-sm.svg");
-        height: 599px;
+        height: 37.5em;
     }
 }
 
 @media (min-width: 600px) {
     .heroSection {
         background-position: 25%;
-        height: 599px;
+        height: 37.5em;
     }
 }
 
 @media (min-width: 1041px) {
     .heroSection {
         background-position: 25% 2%;
-        height: 599px;
+        height: 37.5em;
     }
 }

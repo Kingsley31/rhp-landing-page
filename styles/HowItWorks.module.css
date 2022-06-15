@@ -5,11 +5,12 @@
 
 .howItWorksContainer {
     display: flex;
+    padding: 0px;
 }
 
 .howItWorksSectionImage {
     display: none;
-    background-image: url("../public/images/howitworks-bg.svg");
+    position: relative;
 }
 
 .howItWorksMainContainer h2 {
@@ -29,11 +30,7 @@
     text-align: center;
 }
 
-.mainText {
-    margin-left: .2em;
-    margin-right: .2em;
-    line-height: 1.5em;
-}
+
 
 .lineSeparator {
     display: block;
@@ -43,7 +40,6 @@
 }
 
 .howItWorksStepsContainer {
-    display: grid;
     margin-top: 2em;
 }
 
@@ -64,78 +60,6 @@
     margin-left: 1em;
 }
 
-.becomeAnAgentLink {
-    display: block;
-    position: relative;
-    width: 45%;
-    margin: 1em auto;
-    font-size: .9em;
-    color: var(--title-sub-color);
-}
-
-.becomeAnAgentLink:after {
-    content: "";
-    position: absolute;
-    right: 0.3em;
-    top: 0.2em;
-    width: 1.2em;
-    height: 1.2em;
-    background-image: url("../public/images/become-agent-link-icon.svg");
-    background-repeat: no-repeat;
-    background-size: 1em;
-}
-
-
-@media(min-width:390px) {
-    .becomeAnAgentLink {
-        width: 40%;
-    }
-
-
-
-}
-
-@media(min-width:420px) {
-    .becomeAnAgentLink {
-        width: 37%;
-    }
-}
-
-@media(min-width:453px) {
-    .becomeAnAgentLink {
-        width: 32%;
-    }
-}
-
-@media(min-width:507px) {
-    .becomeAnAgentLink {
-        width: 30%;
-    }
-}
-
-@media(min-width:515px) {
-    .becomeAnAgentLink {
-        width: 29%;
-    }
-}
-
-@media(min-width:528px) {
-    .becomeAnAgentLink {
-        width: 28%;
-    }
-}
-
-@media(min-width:550px) {
-    .becomeAnAgentLink {
-        width: 26%;
-    }
-}
-
-@media(min-width:576px) {
-    .becomeAnAgentLink {
-        width: 25%;
-    }
-}
 
 @media(min-width:600px) {
     .howItWorksSection {
@@ -145,25 +69,37 @@
 
     .howItWorksContainer {
         align-items: stretch;
-        height: 300px;
+        justify-content: center;
+        gap: 1.5em;
+        /* height: 18em; */
     }
 
     .howItWorksSectionImage {
         display: block;
-        width: 45%;
-        background-repeat: no-repeat;
-        background-size: cover;
+        width: 55%;
+        padding: 0px;
+    }
+
+    .howItWorksSectionImage img {
+        width: 84%;
+        height: 17em;
+        margin-left: 16%;
+        margin-top: 1.2em;
+        margin-bottom: 0px;
+        object-fit: cover;
+        object-position: 100% calc(16.7em * -0.07);
+        /* background-color: blue; */
     }
 
     .howItWorksMainContainer {
-        width: 55%;
+        width: 45%;
         padding-top: 3em;
         padding-right: 0.8em;
     }
 
     .howItWorksMainContainer h2 {
         text-align: left;
-        margin: 0px;
+        margin: 1em 0px 0px 0px;
         font-size: .8em;
     }
 
@@ -182,241 +118,107 @@
 
     .howItWorksStepsContainer {
         margin-top: 1em;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-between;
+        width: 11em;
     }
 
 
     .howItWorksStep img {
-        width: 1.2em;
+        width: 1.5em;
     }
 
     .howItWorksStep p {
         flex-grow: 9;
         font-size: .4em;
         text-align: left;
-        margin-left: 0.4em;
-    }
-
-    .becomeAnAgentLink {
-        display: block;
-        position: relative;
-        width: 33%;
-        margin: .8em 0;
-        font-size: .7em;
+        margin-left: 1em;
+        line-height: 1.8em;
     }
 
 
 }
 
-
-@media(min-width:619px) {
-    .howItWorksContainer {
-        height: 310px;
-    }
-
-    .becomeAnAgentLink {
-        width: 30%;
-        margin: .8em 0;
-        font-size: .7em;
+@media(min-width:605px) {
+    .howItWorksSectionImage img {
+        height: 17.3em;
     }
 }
 
-@media (min-width:641px) {
-    .howItWorksContainer {
-        height: 320px;
-    }
-
-}
-
-@media (min-width:653px) {
-    .howItWorksMainContainer {
-        padding-top: 3.5em;
+@media(min-width:614px) {
+    .howItWorksSectionImage img {
+        height: 17.6em;
     }
 }
 
-@media (min-width:660px) {
-    .howItWorksContainer {
-        height: 325px;
-    }
-
-
-}
-
-@media (min-width:680px) {
-    .howItWorksContainer {
-        height: 340px;
-    }
-
-    .howItWorksMainContainer {
-        padding-top: 4em;
-    }
-
-    .becomeAnAgentLink {
-        width: 28%;
-        margin: .8em 0;
+@media(min-width:620px) {
+    .howItWorksSectionImage img {
+        height: 17.7em;
     }
 }
 
-@media (min-width:696px) {
-    .howItWorksContainer {
-        height: 350px;
+@media(min-width:630px) {
+    .howItWorksSectionImage img {
+        height: 17.9em;
     }
 }
 
-@media (min-width:733px) {
-    .howItWorksContainer {
-        height: 365px;
+@media(min-width:630px) {
+    .howItWorksSectionImage img {
+        height: 18.5em;
     }
+}
 
-    .howItWorksMainContainer {
-        padding-right: 0.9em;
+@media (min-width:650px) {
+    .howItWorksStepsContainer {
+        margin-top: 1em;
+        width: 12em;
     }
 
     .howItWorksMainContainer h2 {
         font-size: .9em;
-    }
-
-    .howItWorksMainContainer p {
-        font-size: .6em;
-        line-height: 1.5em;
-        text-align: left;
+        margin: 1.3em 0px 0px 0px;
     }
 
     .howItWorksStep img {
-        width: 1.2em;
+        width: 1.4em;
     }
 
     .howItWorksStep p {
         font-size: .5em;
-        margin-left: 0.6em;
-    }
-
-    .becomeAnAgentLink {
-        width: 27%;
-        margin: .8em 0;
-    }
-}
-
-@media (min-width:742px) {
-    .howItWorksContainer {
-        height: 380px;
-    }
-
-}
-
-@media (min-width:744px) {
-    .howItWorksMainContainer h2 {
-        font-size: 1em;
-    }
-
-    .howItWorksMainContainer p {
-        font-size: .7em;
+        margin-left: 0.8em;
         line-height: 1.5em;
-        text-align: left;
-    }
-
-    .howItWorksStep img {
-        width: 1.2em;
-    }
-
-    .howItWorksStep p {
-        font-size: .6em;
-        margin-left: 0.6em;
     }
 }
 
-@media (min-width:751px) {
-    .becomeAnAgentLink {
-        width: 26%;
-        margin: .8em 0;
+@media(min-width:660px) {
+    .howItWorksSectionImage img {
+        height: 19em;
     }
 }
 
-@media (min-width:789px) {
+@media(min-width:670px) {
+    .howItWorksSectionImage img {
+        height: 19.5em;
+    }
+}
+
+@media(min-width:680px) {
+    .howItWorksSectionImage img {
+        height: 20em;
+    }
+}
+
+@media(min-width:700px) {
+    .howItWorksSectionImage img {
+        height: 20.5em;
+    }
+
+    .howItWorksStepsContainer {
+        margin-top: .8em;
+        width: 13em;
+    }
+
     .howItWorksMainContainer h2 {
-        font-size: 1em;
-    }
-
-    .howItWorksMainContainer p {
-        font-size: .7em;
-        line-height: 1.5em;
-        text-align: left;
-    }
-
-    .howItWorksStep img {
-        width: 1.2em;
-    }
-
-    .howItWorksStep p {
-        font-size: .7em;
-        margin-left: 0.6em;
-    }
-}
-
-@media (min-width:790px) {
-    .howItWorksContainer {
-        height: 390px;
-    }
-}
-
-@media (min-width:806px) {
-    .howItWorksContainer {
-        height: 400px;
-    }
-
-    .becomeAnAgentLink {
-        width: 24%;
-    }
-
-}
-
-@media (min-width:831px) {
-    .howItWorksContainer {
-        height: 410px;
-    }
-}
-
-@media (min-width:851px) {
-    .howItWorksContainer {
-        height: 420px;
-    }
-
-    .becomeAnAgentLink {
-        width: 24%;
-        margin: .8em 0;
-    }
-}
-
-@media (min-width:877px) {
-    .howItWorksContainer {
-        height: 430px;
-    }
-
-    /* .becomeAnAgentLink {
-        width: 24%;
-    } */
-
-}
-
-@media (min-width:899px) {
-    .howItWorksContainer {
-        height: 440px;
-    }
-
-    .becomeAnAgentLink {
-        width: 22%;
-    }
-
-}
-
-@media (min-width:905px) {
-    .howItWorksMainContainer h2 {
-        font-size: 1.1em;
-    }
-
-    .howItWorksMainContainer p {
-        font-size: .8em;
+        font-size: .9em;
     }
 
     .howItWorksStep img {
@@ -424,134 +226,297 @@
     }
 
     .howItWorksStep p {
-        font-size: .8em;
-        margin-left: 0.6em;
-    }
-
-    .becomeAnAgentLink {
-        font-size: .8em;
-        width: 24%;
+        font-size: .6em;
+        margin-left: 0.8em;
+        line-height: 1.5em;
     }
 }
 
-@media (min-width:908px) {
-    .howItWorksContainer {
-        height: 450px;
-    }
-
-
-}
-
-@media (min-width:941px) {
-    .howItWorksContainer {
-        height: 470px;
-    }
-
-
-}
-
-@media (min-width:983px) {
-    .howItWorksContainer {
-        height: 490px;
-    }
-
-    .becomeAnAgentLink {
-        font-size: .8em;
-        width: 22%;
+@media(min-width:720px) {
+    .howItWorksSectionImage img {
+        height: 21em;
     }
 }
 
-@media (min-width:1017px) {
-    .howItWorksContainer {
-        height: 500px;
+@media(min-width:731px) {
+    .howItWorksSectionImage img {
+        height: 21.5em;
     }
-
-
 }
 
-@media (min-width:1038px) {
+@media(min-width:741px) {
+    .howItWorksSectionImage img {
+        height: 22em;
+    }
+}
+
+@media(min-width:761px) {
+    .howItWorksSectionImage img {
+        height: 22.5em;
+    }
+}
+
+@media(min-width:783px) {
+    .howItWorksSectionImage img {
+        height: 23em;
+    }
+}
+
+@media(min-width:801px) {
+    .howItWorksSectionImage {
+        width: 50%;
+    }
+
+    .howItWorksSectionImage img {
+        height: 22em;
+    }
+
+    .howItWorksStepsContainer {
+        margin-top: 1em;
+        width: 14em;
+    }
+
     .howItWorksMainContainer h2 {
-        font-size: 1.2em;
+        font-size: 1em;
+
     }
 
-    .howItWorksMainContainer p {
-        font-size: .9em;
+    .howItWorksStep img {
+        width: 1.7em;
     }
 
     .howItWorksStep p {
-        font-size: .9em;
-        margin-left: 0.6em;
+        font-size: .6em;
+        margin-left: 0.8em;
+        line-height: 1.5em;
+    }
+}
+
+@media(min-width:821px) {
+    .howItWorksSectionImage img {
+        height: 22.5em;
+    }
+}
+
+@media(min-width:841px) {
+    .howItWorksSectionImage img {
+        height: 23em;
+    }
+}
+
+@media(min-width:851px) {
+    .howItWorksSectionImage img {
+        height: 23.5em;
+    }
+}
+
+@media(min-width:861px) {
+    .howItWorksSectionImage img {
+        height: 24em;
+    }
+}
+
+@media(min-width:881px) {
+    .howItWorksSectionImage img {
+        height: 24.5em;
+    }
+}
+
+@media (min-width:890px) {
+    .howItWorksStepsContainer {
+        margin-top: 1em;
+        width: 14em;
+    }
+
+    .howItWorksMainContainer h2 {
+        font-size: 1em;
     }
 
     .howItWorksStep img {
         width: 1.8em;
     }
-}
 
-
-@media (min-width:1040px) {
-    .howItWorksContainer {
-        height: 517px;
+    .howItWorksStep p {
+        font-size: .6em;
+        margin-left: 0.8em;
+        line-height: 1.5em;
     }
 }
 
-@media (min-width:1072px) {
-    .howItWorksContainer {
-        height: 525px;
+@media(min-width:900px) {
+    .howItWorksSectionImage img {
+        height: 25em;
+    }
+}
+
+@media(min-width:920px) {
+    .howItWorksSectionImage img {
+        height: 25.5em;
+    }
+}
+
+@media(min-width:930px) {
+    .howItWorksSectionImage img {
+        height: 26em;
+    }
+}
+
+@media(min-width:950px) {
+    .howItWorksSectionImage img {
+        height: 26.5em;
+    }
+}
+
+@media(min-width:961px) {
+    .howItWorksSectionImage img {
+        height: 27em;
+    }
+}
+
+@media(min-width:971px) {
+    .howItWorksSectionImage img {
+        height: 27.5em;
     }
 
-    .becomeAnAgentLink {
+    .howItWorksStepsContainer {
+        margin-top: 1em;
+        width: 16em;
+    }
+
+    .howItWorksMainContainer h2 {
+        font-size: 1.3em;
+    }
+
+    .howItWorksStep img {
+        width: 1.8em;
+    }
+
+    .howItWorksStep p {
         font-size: .8em;
-        width: 21%;
+        margin-left: 0.8em;
+        line-height: 1.5em;
     }
 }
 
-@media (min-width:1095px) {
+@media(min-width:991px) {
+    .howItWorksSectionImage img {
+        height: 28em;
+    }
+}
+
+@media(min-width:1002px) {
     .howItWorksContainer {
-        height: 535px;
-    }
-}
-
-@media (min-width:1112px) {
-    .howItWorksContainer {
-        height: 545px;
+        align-items: stretch;
+        justify-content: center;
+        gap: 2.5em;
+        /* height: 18em; */
     }
 
-    .becomeAnAgentLink {
-        font-size: .8em;
-        width: 20%;
-    }
-}
+    /* .howItWorksSectionImage img {
+        height: 28.5em;
+    } */
 
-@media (min-width:1146px) {
-    .howItWorksContainer {
-        height: 555px;
+    .howItWorksStepsContainer {
+        margin-top: 1em;
+        width: 19em;
     }
 
-    .becomeAnAgentLink {
-        font-size: .8em;
-        width: 19%;
-    }
-}
-
-@media (min-width:1171px) {
-    .howItWorksMainContainer {
-        padding-top: 7em;
+    .howItWorksMainContainer h2 {
+        font-size: 1.5em;
     }
 
     .howItWorksStep img {
         width: 1.9em;
     }
-}
 
-@media (min-width:1181px) {
-    .howItWorksContainer {
-        height: 565px;
+    .howItWorksStep p {
+        font-size: .8em;
+        margin-left: 0.8em;
+        line-height: 1.5em;
     }
 }
 
-@media (min-width:1200px) {
+@media(min-width:1021px) {
+    .howItWorksSectionImage img {
+        height: 28.5em;
+    }
+}
+
+@media(min-width:1041px) {
+    .howItWorksSectionImage img {
+        height: 28.7em;
+    }
+}
+
+@media(min-width:1061px) {
+    .howItWorksSectionImage img {
+        height: 29.2em;
+    }
+}
+
+@media(min-width:1071px) {
+    .howItWorksSectionImage img {
+        height: 30em;
+    }
+}
+
+@media(min-width:1091px) {
+    .howItWorksSectionImage img {
+        height: 30.3em;
+    }
+}
+
+@media(min-width:1100px) {
+    .howItWorksSectionImage img {
+        height: 30.8em;
+    }
+}
+
+@media(min-width:1129px) {
+    .howItWorksSectionImage img {
+        height: 31.2em;
+    }
+}
+
+@media(min-width:1139px) {
+    .howItWorksSectionImage img {
+        height: 31.7em;
+    }
+}
+
+@media(min-width:1150px) {
+    .howItWorksSectionImage img {
+        height: 31.9em;
+    }
+}
+
+@media(min-width:1170px) {
+    .howItWorksSectionImage img {
+        height: 32.3em;
+    }
+}
+
+@media(min-width:1181px) {
+    .howItWorksSectionImage img {
+        height: 32.7em;
+    }
+}
+
+@media(min-width:1191px) {
+    .howItWorksSectionImage img {
+        height: 33.2em;
+    }
+}
+
+
+
+
+@media(min-width:1205px) {
+
     .howItWorksContainer {
-        height: 575px;
+        align-items: stretch;
+        justify-content: center;
+        gap: 4em;
+        /* height: 18em; */
     }
 }

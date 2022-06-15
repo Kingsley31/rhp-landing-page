@@ -31,25 +31,32 @@
 
 .whyUseUsPoint {
     width: 9em;
-    height: 9em;
+    height: 10em;
     background-color: #FFFFFF;
     margin-top: 2em;
+    border-radius: 5px;
+    border-width: 2.5px;
+    border-style: solid;
+    border-color: #18273a17;
 }
 
 .whyUseUsPoint h4,
 .whyUseUsPoint p {
     text-align: center;
-    color: var(--text-color);
 }
 
 .whyUseUsPoint h4 {
     font-size: .8em;
     margin-top: .5em;
     margin-bottom: 0px;
+    color: #18273A;
 }
 
 .whyUseUsPoint p {
     margin-top: .4em;
+    margin-left: .2em;
+    margin-right: .2em;
+    color: #4a5768ba;
 }
 
 .whyUseUsPoint img {
@@ -140,10 +147,175 @@
     }
 }
 
+@media (min-width:600px) {
+
+    .whyUseUsPointContainer {
+        width: 36em;
+    }
+
+    .whyUseUsPoint {
+        width: 8em;
+        height: 8.5em;
+        padding: .3em;
+    }
+}
 
 @media (min-width:632px) {
 
     .whyUseUsPointContainer {
-        width: 36em;
+        width: 38em;
+    }
+
+    .whyUseUsPoint {
+        width: 8.3em;
+        height: 8.5em;
+        padding: .3em;
+    }
+}
+
+@media (min-width:680px) {
+
+    .whyUseUsPointContainer {
+        width: 40em;
+    }
+
+    .whyUseUsPoint {
+        width: 8.5em;
+        height: 8.7em;
+        padding: .3em;
+    }
+}
+
+@media (min-width:700px) {
+
+    .whyUseUsPointContainer {
+        width: 42em;
+    }
+
+    .whyUseUsPoint {
+        width: 8.7em;
+        height: 8.9em;
+        padding: .3em;
+    }
+}
+
+@media (min-width:721px) {
+
+    .whyUseUsPointContainer {
+        width: 44em;
+    }
+
+    .whyUseUsPoint {
+        width: 8.9em;
+        height: 9.1em;
+        padding: .3em;
+    }
+
+    .whyUseUsPoint h4 {
+        font-size: .8em;
+        margin-top: .7em;
+    }
+
+    .whyUseUsPoint p {
+        font-size: .5em;
+    }
+}
+
+@media (min-width:770px) {
+
+    .whyUseUsPointContainer {
+        width: 46em;
+    }
+
+    .whyUseUsPoint {
+        width: 9.9em;
+        height: 9.7em;
+        padding: .3em;
+    }
+
+    .whyUseUsPoint p {
+        font-size: .7em;
+    }
+}
+
+@media (min-width:800px) {
+    .whyUseUsSection {
+        padding: 3em 0px 5em 0px;
+    }
+
+    .whyUseUsPointContainer {
+        width: 48em;
+    }
+
+    .whyUseUsPoint {
+        width: 10.5em;
+        height: 10.5em;
+        padding: .3em;
+    }
+
+    .whyUseUsPoint img {
+        display: block;
+        width: 2.5em;
+    }
+
+    .whyUseUsPoint h4 {
+        font-size: .9em;
+        margin-top: .7em;
+    }
+
+    .whyUseUsPoint p {
+        font-size: .7em;
+    }
+}
+
+@media (min-width:821px) {
+
+    .whyUseUsPointContainer {
+        width: 50em;
+    }
+
+    .whyUseUsPoint {
+        width: 11em;
+        height: 11em;
+        padding: .3em;
+    }
+
+    .whyUseUsPoint h4 {
+        font-size: 1em;
+        margin-top: .7em;
+    }
+
+    .whyUseUsPoint p {
+        font-size: .8em;
+    }
+}
+
+@media (min-width:900px) {
+
+    .whyUseUsPointContainer {
+        width: 55em;
+    }
+
+    .whyUseUsContainer h2 {
+        font-size: 1.7em;
+    }
+
+    .whyUseUsContainer p {
+        font-size: .9em;
+    }
+
+    .whyUseUsPoint {
+        width: 12em;
+        height: 11em;
+        padding: .3em;
+    }
+
+    .whyUseUsPoint h4 {
+        font-size: 1em;
+        margin-top: .7em;
+    }
+
+    .whyUseUsPoint p {
+        font-size: .8em;
     }
 }

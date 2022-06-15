@@ -8,8 +8,27 @@ export default function AboutUsSection() {
                 <h2 className={styles.pageTitle}>Who <span className={styles.pageTitleSpan}>are we</span></h2>
                 <img className={styles.lineSeparator} src="images/separator-icon.svg" />
                 <div className={styles.aboutTextContainer}>
-                    <p>Rhino homes and properties Ltd (Rhp) is a Nigerian based real-estate firm that acquires, develops and sells properties to individuals and organizations around the globe.</p>
-                    <p>Rhp’s strategy is to leverage employee operations capacity and technical innovation to deliver affordable homes to customers. Rhp sells her properties through marketers, real-estate agents and recommendations from previous customers. Aside from marketing, the major means through which Rhino homes sell their products is real-estate agency.</p>
+                    <p>Rhino homes and properties Ltd (Rhp) is a Nigerian based real-estate firm that acquires, develops and sells properties to individuals and organizations around the globe. At Rhino Homes and Properties Limited, you are number one. Whether you are one of our certified agent, investor , subscriber, partner or buyer, we value your business and will provide you with the individual attention and service you deserve. We believe in integrity, commitment to excellence, a professional attitude, and personalized care.</p>
+                </div>
+                <div className={styles.rhpEntitiesContainer}>
+                    <div className={styles.rhpEntity}>
+                        <img src="/images/agent_icon.svg" />
+                        <h4>Who is a <span>Rhino Agent</span></h4>
+                        <p>Rhino homes and properties Ltd. agents are verified persons that has the right to manage, promote and sale developed Rhino homes properties to gain commissions.</p>
+                        <a href="#getstarted">Become an Agent</a>
+                    </div>
+                    <div className={styles.rhpEntity}>
+                        <img src="/images/investor_icon.svg" />
+                        <h4>Who is a <span>Rhino Investor</span></h4>
+                        <p>Rhino homes and properties Ltd. investors are verified persons who have choosen to be part of our ongoing works and property developemt project and have invested to make profits</p>
+                        <a href="#getstarted">Become an Investor</a>
+                    </div>
+                    <div className={styles.rhpEntity}>
+                        <img src="/images/subscriber_icon.svg" />
+                        <h4>Who is a <span>Rhino Subscriber</span></h4>
+                        <p>Rhino homes and properties Ltd. subscribers are verified persons who has subscribed to be part of our partnering deals and earn interest on RHP subscribed property development projects</p>
+                        <a href="#getstarted">Become a Subscriber</a>
+                    </div>
                 </div>
 
             </div>
