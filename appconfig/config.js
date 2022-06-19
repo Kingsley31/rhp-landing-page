@@ -1,3 +1,4 @@
 export default {
-    API_BASE_URL: "https://landinpageapi.herokuapp.com"
+    API_BASE_URL: "http://127.0.0.1/backend"
+    //"https://landinpageapi.herokuapp.com"
 };
