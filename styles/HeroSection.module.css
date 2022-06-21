@@ -36,3 +36,46 @@
         height: 37.5em;
     }
 }
+
+@media (min-width: 1100px) {
+    .heroSection {
+        background-position: 25% 2%;
+        height: 39.5em;
+    }
+}
+
+@media (min-width: 1139px) {
+    .heroSection {
+        background-position: 25% 2%;
+        height: 41.5em;
+    }
+}
+
+@media (min-width: 1155px) {
+    .heroSection {
+        background-position: 25% 2%;
+        height: 45.5em;
+    }
+}
+
+@media (min-width: 1321px) {
+    .heroSection {
+        background-position: 25% 2%;
+        height: 48.5em;
+    }
+}
+
+
+@media (min-width: 1421px) {
+    .heroSection {
+        background-position: 25% 2%;
+        height: 50.5em;
+    }
+}
+
+@media (min-width: 1521px) {
+    .heroSection {
+        background-position: 25% 2%;
+        height: 53.5em;
+    }
+}
