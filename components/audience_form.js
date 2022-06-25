@@ -176,7 +176,7 @@ export default function AudienceForm() {
         <>
             <Dialog onDoneButtonClick={onDialogButtonClcked} isOpen={dialogIsOpen} title="Form submitted successfully" message={"Thank you for taking time to show interest to become one of our " + selectedRole + ", our consultant would contact you shortly"} />
             <div id='formSection' className={styles.formSection}>
-                <h2 className={styles.formTitle}>Rhino Homes & Properties </h2>
+                <h2 className={styles.formTitle}>Rhino Homes & Properties LTD</h2>
                 <img className={styles.formTitleSeperator} src='images/separator-icon.svg' />
                 <p className={styles.formDescription}>Join our unboarding waiting list to become one of our verified agent, buyer or investor</p>
                 <form onSubmit={submitForm} className={styles.form}>

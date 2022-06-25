@@ -5,7 +5,7 @@ export default function WhyUseUsSection() {
         <div className={styles.whyUseUsSection}>
             <div className="container">
                 <div className={styles.whyUseUsContainer}>
-                    <h2>Why use <span>Rhino</span>Homes & Properties</h2>
+                    <h2>Why use <span>Rhino</span> Homes & Properties</h2>
                     <p>Hassle Free way to get the best property around you</p>
                     <div className={styles.whyUseUsPointContainer}>
                         <div className={styles.whyUseUsPoint}>

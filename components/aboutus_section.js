@@ -26,7 +26,7 @@ export default function AboutUsSection() {
                     <div className={styles.rhpEntity}>
                         <img src="/images/subscriber_icon.svg" />
                         <h4>Who is a <span>Rhino Buyer</span></h4>
-                        <p>Rhino homes and properties Ltd. buyer are random individuals who are interested in buying verified Rhino homes properties.</p>
+                        <p>Rhino homes and properties Ltd. buyer are random individuals and organizations who are interested in buying verified Rhino homes properties.</p>
                         <a href="#getstarted">Become a Buyer</a>
                     </div>
                 </div>

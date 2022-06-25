@@ -14,7 +14,7 @@ export default function HowItWorksSection() {
                         <div className={styles.howItWorksStepsContainer}>
                             <div className={styles.howItWorksStep}>
                                 <img src="images/create_account_icon.svg" />
-                                <p>Choose and create an account as an agent, investor or as a Subscriber.</p>
+                                <p>Choose and create an account as an agent, investor or as a buyer.</p>
                             </div>
                             <div className={styles.howItWorksStep}>
                                 <img src="images/source-property-icon.svg" />
