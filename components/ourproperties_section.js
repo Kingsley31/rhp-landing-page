@@ -37,28 +37,28 @@ export default function OurPropertiesSection() {
                             <img onClick={scrollLeft} className={styles.controlBtn + ' ' + styles.preBtn} src="images/prev-icon.svg" alt="Previous button" />
                             <div className={styles.slider}>
                                 <div className={styles.slideItem}>
-                                    <img src="images/image1.svg" alt="Slide Item" />
+                                    <img src="images/lowbigben1.jpg" alt="Slide Item" />
                                     <p>Big Ben Estate </p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image2.svg" alt="Slide Item" />
+                                    <img className={styles.slideItem} src="images/lowbigben2.jpg" alt="Slide Item" />
                                     <p>Big Ben Estate </p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image3.svg" alt="Slide Item" />
-                                    <p>Royal Villa Estate </p>
+                                    <img className={styles.slideItem} src="images/lowoakview1.jpg" alt="Slide Item" />
+                                    <p>Oak View Estate </p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image4.svg" alt="Slide Item" />
-                                    <p>Royal Villa Estate </p>
+                                    <img className={styles.slideItem} src="images/lowoakview2.jpg" alt="Slide Item" />
+                                    <p>Oak View Estate</p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image5.svg" alt="Slide Item" />
-                                    <p>KingsDale Court</p>
+                                    <img className={styles.slideItem} src="images/lowbigben2.jpg" alt="Slide Item" />
+                                    <p>Big Ben Estate</p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image6.svg" alt="Slide Item" />
-                                    <p>KingsDale Court</p>
+                                    <img className={styles.slideItem} src="images/lowoakview2.jpg" alt="Slide Item" />
+                                    <p>Oak View Estate</p>
                                 </div>
                             </div>
                             <img onClick={scrollRight} className={styles.controlBtn + ' ' + styles.nextBtn} src='images/next-icon.svg' alt='Next button' />
@@ -74,27 +74,27 @@ export default function OurPropertiesSection() {
                             <img onClick={scrollLeft} className={styles.controlBtn + ' ' + styles.preBtn} src="images/prev-icon.svg" alt="Previous button" />
                             <div className={styles.slider}>
                                 <div className={styles.slideItem}>
-                                    <img src="images/image1.svg" alt="Slide Item" />
+                                    <img src="images/midkingsdalecourt1.jpg" alt="Slide Item" />
                                     <p>KingsDale Court </p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image5.svg" alt="Slide Item" />
+                                    <img className={styles.slideItem} src="images/midkingsdalecourt2.jpg" alt="Slide Item" />
                                     <p>KingsDale Court</p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image6.svg" alt="Slide Item" />
+                                    <img className={styles.slideItem} src="images/midkingsdalecourt3.png" alt="Slide Item" />
                                     <p>KingsDale Court</p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image2.svg" alt="Slide Item" />
-                                    <p>Royal Villas Estate </p>
+                                    <img className={styles.slideItem} src="images/midkingsdalecourt4.png" alt="Slide Item" />
+                                    <p>KingsDale Court</p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image3.svg" alt="Slide Item" />
-                                    <p>Royal Villas Estate </p>
+                                    <img className={styles.slideItem} src="images/midkingsdalecourt1.jpg" alt="Slide Item" />
+                                    <p>KingsDale Court</p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image4.svg" alt="Slide Item" />
+                                    <img className={styles.slideItem} src="images/midkingsdalecourt2.jpg" alt="Slide Item" />
                                     <p>KingsDale Court</p>
                                 </div>
                             </div>
@@ -111,28 +111,28 @@ export default function OurPropertiesSection() {
                             <img onClick={scrollLeft} className={styles.controlBtn + ' ' + styles.preBtn} src="images/prev-icon.svg" alt="Previous button" />
                             <div className={styles.slider}>
                                 <div className={styles.slideItem}>
-                                    <img src="images/image1.svg" alt="Slide Item" />
-                                    <p>KingsDale Villas </p>
+                                    <img src="images/luxurykingsdalevilla1.jpg" alt="Slide Item" />
+                                    <p>KingsDale Villa</p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image7.svg" alt="Slide Item" />
-                                    <p>KingsDale Villas</p>
+                                    <img className={styles.slideItem} src="images/luxurykingsdalevilla2.jpg" alt="Slide Item" />
+                                    <p>KingsDale Villa</p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image6.svg" alt="Slide Item" />
-                                    <p>KingsDale Villas</p>
+                                    <img className={styles.slideItem} src="images/luxurykingsdalevilla3.jpg" alt="Slide Item" />
+                                    <p>KingsDale Villa</p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image4.svg" alt="Slide Item" />
-                                    <p>KingsDale Villas </p>
+                                    <img className={styles.slideItem} src="images/luxurykingsdalevilla4.jpg" alt="Slide Item" />
+                                    <p>KingsDale Villa</p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image3.svg" alt="Slide Item" />
-                                    <p>Royal Villas Estate </p>
+                                    <img className={styles.slideItem} src="images/luxurykingsdalevilla5.jpg" alt="Slide Item" />
+                                    <p>KingsDale Villa</p>
                                 </div>
                                 <div className={styles.slideItem}>
-                                    <img className={styles.slideItem} src="images/image2.svg" alt="Slide Item" />
-                                    <p>Royal Villas Estate</p>
+                                    <img className={styles.slideItem} src="images/luxurykingsdalevilla1.jpg" alt="Slide Item" />
+                                    <p>KingsDale Villa</p>
                                 </div>
 
                             </div>
